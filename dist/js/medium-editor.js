@@ -3757,14 +3757,14 @@ MediumEditor.extensions = {};
                 '<input type="text" class="medium-editor-toolbar-input" placeholder="', this.placeholderText, '">'
             ];
 
-            template.push(
+            /*template.push(
                 '<a href="#" class="medium-editor-toolbar-save">',
                 this.getEditorOption('buttonLabels') === 'fontawesome' ? '<i class="fa fa-check"></i>' : this.formSaveLabel,
                 '</a>'
-            );
+            );*/
 
             template.push('<a href="#" class="medium-editor-toolbar-close">',
-                this.getEditorOption('buttonLabels') === 'fontawesome' ? '<i class="fa fa-times"></i>' : this.formCloseLabel,
+                this.getEditorOption('buttonLabels') === 'fontawesome' ? '<svg class="svgIcon-use" width="19" height="19" viewBox="0 0 19 19"><path d="M13.792 4.6l-4.29 4.29-4.29-4.29-.612.613 4.29 4.29-4.29 4.29.613.612 4.29-4.29 4.29 4.29.612-.613-4.29-4.29 4.29-4.29" fill-rule="evenodd"></path></svg>' : this.formCloseLabel,
                 '</a>');
 
             // both of these options are slightly moot with the ability to
